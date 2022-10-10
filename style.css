@@ -1,33 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .navbar li {
+        margin-left : 1vw;
+        margin-right : 1vw;
+    }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
 h1
-  {
-    font-family: 'Oswald', sans-serif;
-    color: navy;
-    text-align: center;
-    font-size: 52px;
-  }
+{
+  font-family: 'Oswald', sans-serif;
+  color: navy;
+  text-align: center;
+  font-size: 8vw;
+}
 
 /* Other Fonts = Kalam, */
 p
-  {
-    font-family: 'Sriracha', sans-serif;
-    color: slategray;
-    text-align: center;
-    font-size: 24px;
-  }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+{
+  font-family: 'Sriracha', sans-serif;
+  color: slategray;
   text-align: center;
+  font-size: 2.5vw;
 }
 
-/* .navbar-nav
+.center 
 {
-  padding: 0;
-  > a
-  {
-    align-items: center;
-    color: black;
-  }
-} */
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img 
+{
+  max-width: 100%;
+  height:auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 3vw;
+}
+
+.fa-brands {
+  font-size: 8vw;
+}
+
+.navbar {
+    display:table;
+    width: 100%;
+    li{
+        display:table-cell;
+        margin-left: .5vw;
+        margin-right: .5vw;
+    }
+}
